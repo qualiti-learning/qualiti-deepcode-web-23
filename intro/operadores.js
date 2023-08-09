@@ -6,16 +6,29 @@ const lastname = 'leone';
 const name2 = 'debora';
 const lastname2 = 'leone';
 
-const user = {
-  name: 'Keven',
-  lastname: 'Leone',
-  age: 27,
-  movies: ['Interestelar', 'Batman'],
-  state: {
-    name: 'Pernambuco',
-    city: 'Recife',
-    population: 1_600_000,
-  },
+const age = 27;
+
+const defaultState = {
+  name: 'Pernambuco',
+  city: 'Recife',
+  population: 1_600_000,
 };
 
-console.log(user.state.name);
+const users = [
+  {
+    name: 'Keven',
+    lastname: 'Leone',
+    age: 10,
+    movies: ['Interestelar', 'Batman'],
+    state: defaultState,
+  },
+  {
+    name: 'Debora',
+    lastname: 'Taise',
+    age: 29,
+    movies: ['Barbie', 'Batman'],
+    state: defaultState,
+  },
+];
+
+console.log(users[0].state);
